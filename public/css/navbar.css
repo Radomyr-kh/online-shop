@@ -1,0 +1,35 @@
+.nav-bar {
+  background-color: black;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar {
+  font-size: 20px;
+}
+
+#cart-items-number {
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+}

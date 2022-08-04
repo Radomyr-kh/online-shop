@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <!-- JavaScript -->
+  <script defer type="text/javascript" src="javascript/Data.js"></script>
+  <script defer type="text/javascript" src="javascript/main.js"></script>
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" type="image/png" href="./images/favicon/shopping-cart-icon.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <div class="nav-bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="/cart.html"><i class="bi bi-cart"></i> Cart
+          <span id="cart-items-number">15</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="flexbox-container">
+    <!-- Shop Panel -->
+    <div class="left">
+      <div class="shop-box" onclick="generateShopCards(0);">
+        <p>Pizzeria</p>
+      </div>
+      <div class="shop-box" onclick="generateShopCards(1);">
+        <p>Bakery</p>
+      </div>
+      <div class="shop-box" onclick="generateShopCards(2);">
+        <p>Grocery</p>
+      </div>
+    </div>
+    <!-- Items Panel -->
+    <div class="shop"></div>
+
+</body>
+
+</html>

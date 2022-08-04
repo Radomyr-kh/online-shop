@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/******* Main Content *********/
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.flexbox-form {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  height: 350px;
+}
+
+input,
+label {
+  margin: 10px 0 0 0;
+  width: 80%;
+  height: 30px;
+  margin: auto;
+}
+
+/************* Shopping Cart ************/
+.shopping-cart-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid black;
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+  width: 50%;
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Cart item */
+.item-box {
+  display: flex;
+  background-color: white;
+
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 200px;
+}
+.item-box img {
+  width: 100%;
+  max-width: 200px;
+  min-width: 150px;
+
+  height: 150px;
+  object-fit: cover;
+  margin: 0 20px 0 0;
+}
+
+.item-box-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-box-info p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.item-box-info span {
+  font-size: 16px;
+  color: red;
+}
+
+.item-box-info input {
+  height: 25px;
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* cross sign */
+.bi-x-lg {
+  color: red;
+  align-self: flex-end;
+}
+.bi-x-lg:hover {
+  cursor: pointer;
+}
+
+/******** Checkout ********/
+.checkout {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.checkout p {
+  font-weight: bold;
+  font-size: 25px;
+  margin: auto;
+}
+
+.checkout input[type="submit"] {
+  border-radius: 5px;
+  height: 35px;
+  width: 110px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.checkout input[type="submit"]:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+/* user order info */
+#user-order {
+  display: none;
+}
+
+/******* Responsiveness *******/
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+  }
+  /* .nav-bar, */
+  .nav-bar ul,
+  .flexbox-form,
+  .shopping-cart-box {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .nav-bar ul {
+    padding: 0;
+    justify-content: center;
+  }
+  .flexbox-form input,
+  label {
+    width: 100%;
+    max-width: 600px;
+  }
+  .item-box {
+    width: 100%;
+    max-width: 600px;
+    max-height: 200px;
+  }
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    margin: 10px auto 50px auto;
+  }
+}

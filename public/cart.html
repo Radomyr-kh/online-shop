@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cart</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- JavaScript -->
+  <script defer type="text/javascript" src="javascript/Data.js"></script>
+  <script defer type="text/javascript" src="javascript/cart.js"></script>
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" type="image/png" href="./images/favicon/shopping-cart-icon.png">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="#"><i class="bi bi-cart"></i> Cart
+          <span id="cart-items-number">15</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <!-- User Form  -->
+    <form action="/cart" method="POST" class="flexbox-form" id="userInfo" onsubmit="clearCart()">
+      <label for="name">Name:</label>
+      <input required type="text" id="name" name="name" placeholder="Your name"><br>
+
+      <label for="email">Email:</label>
+      <input required type="email" id="email" name="email" placeholder="Your email"><br>
+
+      <label for="phone">Phone:</label>
+      <input required type="tel" id="phone" name="phone" placeholder="Your phone"><br>
+
+      <label for="address">Address:</label>
+      <input required type="text" id="address" name="address" placeholder="Your address"><br>
+
+      <input type="text" id="user-order" name="user_order" value="">
+    </form>
+
+    <!-- Shopping Cart -->
+    <div class="shopping-cart-box"></div>
+    <div id="after-purchase"></div>
+  </div>
+
+  <div class="checkout">
+    <p id="total-price">Total price: <span>0 $</span></p>
+    <input type="submit" value="Submit" form="userInfo" id="submit-btn">
+  </div>
+
+</body>
+
+</html>
