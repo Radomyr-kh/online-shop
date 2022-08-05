@@ -5,7 +5,7 @@
 - Website for an online shop 
 - The website consists of:
   - `home page` where users can choose a shop and goods
-  - `cart page` where users can change the quantity of chosen good, remove them and also leave their contact info 
+  - `cart page` where users can change the quantity of chosen goods, remove them and also leave their contact info 
 - Implemented saving users’ orders and their contact info to the MongoDB database
 
 
