@@ -1,5 +1,5 @@
 # Online shop
-[![GitHub license](https://img.shields.io/github/license/Radomyr-kh/delivery-app)](https://github.com/Radomyr-kh/online-shop/main/LICENSE.md)
+[![GitHub license](https://img.shields.io/github/license/Radomyr-kh/online-shop)](https://github.com/Radomyr-kh/online-shop/main/LICENSE.md)
 
 ## Start the app
 
