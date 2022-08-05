@@ -3,7 +3,7 @@
 
 ## Start the app
 
-`npm install`
+`npm install`<br/>
 `npm run start`
 
 open http://localhost:3000/
