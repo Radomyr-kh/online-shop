@@ -36,6 +36,7 @@
   color: white;
 }
 
+.active,
 .shop-box:hover,
 .btn-item:hover {
   background-color: black;
@@ -87,6 +88,7 @@ h3 {
   width: 50%;
   height: 30px;
   margin: 10px auto;
+  border: none;
 }
 
 /* Responsive breakpoints*/

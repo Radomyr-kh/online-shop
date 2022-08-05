@@ -69,5 +69,20 @@ const getTotalCartItems = () => {
   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
 
+// add active class to selected shop button
+
+const addActiveClass = () => {
+  const shopButtons = document.getElementsByClassName("shop-box");
+
+  Array.from(shopButtons).forEach((btn) => {
+    btn.addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  });
+};
+
 getTotalCartItems();
 generateShopCards(0);
+addActiveClass();

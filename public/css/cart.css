@@ -60,7 +60,7 @@ label {
 .item-box img {
   width: 100%;
   max-width: 200px;
-  min-width: 150px;
+  min-width: 50px;
 
   height: 150px;
   object-fit: cover;
