@@ -39,7 +39,6 @@ const addToCart = (id) => {
   console.log(basket);
 };
 
-/////////////////////////////////
 const addToCartIndicator = (id) => {
   let targetButton = document.getElementById(`add-btn-${id}`);
   targetButton.style.backgroundColor = 'green';
@@ -76,7 +75,7 @@ const addActiveClass = () => {
 
   Array.from(shopButtons).forEach((btn) => {
     btn.addEventListener('click', function () {
-      var current = document.getElementsByClassName('active');
+      const current = document.getElementsByClassName('active');
       current[0].className = current[0].className.replace(' active', '');
       this.className += ' active';
     });
